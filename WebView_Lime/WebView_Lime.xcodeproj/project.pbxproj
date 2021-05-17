@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D77FE592632B3C300315FAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77FE582632B3C300315FAD /* AppDelegate.swift */; };
+		4D77FE5D2632B3C300315FAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77FE5C2632B3C300315FAD /* ViewController.swift */; };
+		4D77FE602632B3C300315FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D77FE5E2632B3C300315FAD /* Main.storyboard */; };
+		4D77FE622632B3C600315FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D77FE612632B3C600315FAD /* Assets.xcassets */; };
+		4D77FE652632B3C600315FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D77FE632632B3C600315FAD /* LaunchScreen.storyboard */; };
+		65D887957C660CF87A765056 /* Pods_WebView_Lime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2782240F787C4BD0D7182A01 /* Pods_WebView_Lime.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2782240F787C4BD0D7182A01 /* Pods_WebView_Lime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebView_Lime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D77FE552632B3C300315FAD /* WebView_Lime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebView_Lime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D77FE582632B3C300315FAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D77FE5C2632B3C300315FAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D77FE5F2632B3C300315FAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D77FE612632B3C600315FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D77FE642632B3C600315FAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D77FE662632B3C600315FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6828252CE58E3797E2980D95 /* Pods-WebView_Lime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView_Lime.release.xcconfig"; path = "Target Support Files/Pods-WebView_Lime/Pods-WebView_Lime.release.xcconfig"; sourceTree = "<group>"; };
+		98B535E279B98ECEE71E39F2 /* Pods-WebView_Lime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView_Lime.debug.xcconfig"; path = "Target Support Files/Pods-WebView_Lime/Pods-WebView_Lime.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D77FE522632B3C300315FAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D887957C660CF87A765056 /* Pods_WebView_Lime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22F72B9E15B49C78150FF145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2782240F787C4BD0D7182A01 /* Pods_WebView_Lime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D77FE4C2632B3C300315FAD = {
+			isa = PBXGroup;
+			children = (
+				4D77FE572632B3C300315FAD /* WebView_Lime */,
+				4D77FE562632B3C300315FAD /* Products */,
+				E1D9E66DEEAE379FD2D2147E /* Pods */,
+				22F72B9E15B49C78150FF145 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D77FE562632B3C300315FAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D77FE552632B3C300315FAD /* WebView_Lime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D77FE572632B3C300315FAD /* WebView_Lime */ = {
+			isa = PBXGroup;
+			children = (
+				4D77FE582632B3C300315FAD /* AppDelegate.swift */,
+				4D77FE5C2632B3C300315FAD /* ViewController.swift */,
+				4D77FE5E2632B3C300315FAD /* Main.storyboard */,
+				4D77FE612632B3C600315FAD /* Assets.xcassets */,
+				4D77FE632632B3C600315FAD /* LaunchScreen.storyboard */,
+				4D77FE662632B3C600315FAD /* Info.plist */,
+			);
+			path = WebView_Lime;
+			sourceTree = "<group>";
+		};
+		E1D9E66DEEAE379FD2D2147E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98B535E279B98ECEE71E39F2 /* Pods-WebView_Lime.debug.xcconfig */,
+				6828252CE58E3797E2980D95 /* Pods-WebView_Lime.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D77FE542632B3C300315FAD /* WebView_Lime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D77FE692632B3C600315FAD /* Build configuration list for PBXNativeTarget "WebView_Lime" */;
+			buildPhases = (
+				2F25FFFA83F957069BF09A47 /* [CP] Check Pods Manifest.lock */,
+				4D77FE512632B3C300315FAD /* Sources */,
+				4D77FE522632B3C300315FAD /* Frameworks */,
+				4D77FE532632B3C300315FAD /* Resources */,
+				70D98E90BAF6933E30EC1A61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebView_Lime;
+			productName = WebView_Lime;
+			productReference = 4D77FE552632B3C300315FAD /* WebView_Lime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D77FE4D2632B3C300315FAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4D77FE542632B3C300315FAD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 4D77FE502632B3C300315FAD /* Build configuration list for PBXProject "WebView_Lime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D77FE4C2632B3C300315FAD;
+			productRefGroup = 4D77FE562632B3C300315FAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D77FE542632B3C300315FAD /* WebView_Lime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D77FE532632B3C300315FAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D77FE652632B3C600315FAD /* LaunchScreen.storyboard in Resources */,
+				4D77FE622632B3C600315FAD /* Assets.xcassets in Resources */,
+				4D77FE602632B3C300315FAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F25FFFA83F957069BF09A47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebView_Lime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D98E90BAF6933E30EC1A61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebView_Lime/Pods-WebView_Lime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebView_Lime/Pods-WebView_Lime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebView_Lime/Pods-WebView_Lime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D77FE512632B3C300315FAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D77FE5D2632B3C300315FAD /* ViewController.swift in Sources */,
+				4D77FE592632B3C300315FAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D77FE5E2632B3C300315FAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D77FE5F2632B3C300315FAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D77FE632632B3C600315FAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D77FE642632B3C600315FAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D77FE672632B3C600315FAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D77FE682632B3C600315FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D77FE6A2632B3C600315FAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B535E279B98ECEE71E39F2 /* Pods-WebView_Lime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5V59CNMQT;
+				INFOPLIST_FILE = WebView_Lime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.WebView-Lime";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4D77FE6B2632B3C600315FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6828252CE58E3797E2980D95 /* Pods-WebView_Lime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5V59CNMQT;
+				INFOPLIST_FILE = WebView_Lime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.WebView-Lime";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D77FE502632B3C300315FAD /* Build configuration list for PBXProject "WebView_Lime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D77FE672632B3C600315FAD /* Debug */,
+				4D77FE682632B3C600315FAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D77FE692632B3C600315FAD /* Build configuration list for PBXNativeTarget "WebView_Lime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D77FE6A2632B3C600315FAD /* Debug */,
+				4D77FE6B2632B3C600315FAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D77FE4D2632B3C300315FAD /* Project object */;
+}

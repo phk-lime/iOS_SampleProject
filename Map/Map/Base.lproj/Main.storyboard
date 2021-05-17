@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I8j-eI-kxJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-77-1Xk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q24-Bu-m9a">
+                                <rect key="frame" x="334" y="188" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="tRd-DC-51r"/>
+                                    <constraint firstAttribute="height" constant="80" id="usz-cU-l0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="방향찾기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="currentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQN-AD-FhH"/>
+                                    <action selector="directionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IvL-cQ-mKR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIk-Cs-BGk">
+                                <rect key="frame" x="334" y="88" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="NV7-XV-Dqw"/>
+                                    <constraint firstAttribute="width" constant="80" id="Uo2-Dn-tmZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="현재위치">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="currentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wU6-Vo-LGu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="q24-Bu-m9a" firstAttribute="top" secondItem="PIk-Cs-BGk" secondAttribute="bottom" constant="20" id="0GN-OM-A5O"/>
+                            <constraint firstItem="PIk-Cs-BGk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2AL-Ro-LEI"/>
+                            <constraint firstAttribute="trailing" secondItem="5Jj-77-1Xk" secondAttribute="trailing" id="CbN-T3-9xS"/>
+                            <constraint firstItem="5Jj-77-1Xk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LIq-Cx-O3f"/>
+                            <constraint firstAttribute="bottom" secondItem="5Jj-77-1Xk" secondAttribute="bottom" id="Wc6-fo-Yys"/>
+                            <constraint firstItem="5Jj-77-1Xk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xv5-3m-Dzz"/>
+                            <constraint firstItem="PIk-Cs-BGk" firstAttribute="trailing" secondItem="q24-Bu-m9a" secondAttribute="trailing" id="bT4-R0-D0X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="PIk-Cs-BGk" secondAttribute="top" id="ick-12-3o6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eSN-VE-g3L"/>
+                    <connections>
+                        <outlet property="currentButton" destination="PIk-Cs-BGk" id="oop-IA-aw8"/>
+                        <outlet property="headingButton" destination="q24-Bu-m9a" id="FH9-JF-vfK"/>
+                        <outlet property="mapViewContainer" destination="5Jj-77-1Xk" id="jGM-Kl-QCe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="-77"/>
+        </scene>
+        <!--지도-->
+        <scene sceneID="n44-sh-znj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wl7-oC-rA5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="지도" image="map" catalog="system" id="yT6-on-3kq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xLd-3e-cQJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N9g-1M-PWk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zoc-R2-lps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384.0579710144928" y="-77.008928571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GvG-Aa-peA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="I8j-eI-kxJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="shZ-EP-mtf">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wl7-oC-rA5" kind="relationship" relationship="viewControllers" id="FM3-qL-e8p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kbm-7W-B1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473.91304347826093" y="-77.008928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

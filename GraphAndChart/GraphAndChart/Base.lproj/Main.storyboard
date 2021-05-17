@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NBa-KM-A20">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BarChart-->
+        <scene sceneID="Cp8-BI-0dF">
+            <objects>
+                <viewController id="mt9-lg-x8i" customClass="BarChartViewController" customModule="GraphAndChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6U-wR-Ne1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAH-ub-UuP" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="178.5" width="414" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="6GP-nd-ZjJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="394-s7-5Go"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="394-s7-5Go" firstAttribute="trailing" secondItem="XAH-ub-UuP" secondAttribute="trailing" id="0h5-26-O9d"/>
+                            <constraint firstItem="XAH-ub-UuP" firstAttribute="centerY" secondItem="394-s7-5Go" secondAttribute="centerY" id="XlJ-Yb-FSp"/>
+                            <constraint firstItem="XAH-ub-UuP" firstAttribute="leading" secondItem="394-s7-5Go" secondAttribute="leading" id="nrX-hI-onV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="BarChart" image="sun.min" catalog="system" id="KMp-bZ-nyB"/>
+                    <connections>
+                        <outlet property="barChartView" destination="XAH-ub-UuP" id="O73-83-sdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7v-7p-kce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1519" y="723"/>
+        </scene>
+        <!--PieChart-->
+        <scene sceneID="5T1-t8-lP0">
+            <objects>
+                <viewController id="e8z-yy-SqY" customClass="PieChartViewController" customModule="GraphAndChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dlb-no-qiC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-dZ-hAX" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="178.5" width="414" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="4MT-Qb-lav"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eOw-GD-PAZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eOw-GD-PAZ" firstAttribute="trailing" secondItem="dNB-dZ-hAX" secondAttribute="trailing" id="f0o-Fh-YDf"/>
+                            <constraint firstItem="dNB-dZ-hAX" firstAttribute="centerY" secondItem="eOw-GD-PAZ" secondAttribute="centerY" id="ghG-A6-krL"/>
+                            <constraint firstItem="dNB-dZ-hAX" firstAttribute="leading" secondItem="eOw-GD-PAZ" secondAttribute="leading" id="w9T-q4-7U5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PieChart" image="cloud" catalog="system" id="sWJ-8o-JVl"/>
+                    <connections>
+                        <outlet property="pieChartView" destination="dNB-dZ-hAX" id="J0R-VX-aJ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awJ-eg-FCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839" y="723"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xoY-Qn-ZLt">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NBa-KM-A20" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jeV-1p-tok">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mt9-lg-x8i" kind="relationship" relationship="viewControllers" id="pT2-du-vUH"/>
+                        <segue destination="e8z-yy-SqY" kind="relationship" relationship="viewControllers" id="Sp2-7T-4ax"/>
+                        <segue destination="5AR-ru-JaB" kind="relationship" relationship="viewControllers" id="uEy-Gg-Cqb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRH-Y5-cm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="-7"/>
+        </scene>
+        <!--LineChart-->
+        <scene sceneID="Haz-ef-0ER">
+            <objects>
+                <viewController id="5AR-ru-JaB" customClass="LineChartViewController" customModule="GraphAndChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ADm-Ii-ltz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEr-SD-Zqd" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="178.5" width="414" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="TW5-E8-mdl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mdn-Ra-9uJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vEr-SD-Zqd" firstAttribute="leading" secondItem="mdn-Ra-9uJ" secondAttribute="leading" id="LeG-5H-iKC"/>
+                            <constraint firstItem="vEr-SD-Zqd" firstAttribute="centerY" secondItem="mdn-Ra-9uJ" secondAttribute="centerY" id="vM6-2Z-lnh"/>
+                            <constraint firstItem="mdn-Ra-9uJ" firstAttribute="trailing" secondItem="vEr-SD-Zqd" secondAttribute="trailing" id="zqP-J1-PYF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LineChart" image="snow" catalog="system" id="AD4-tE-V7C"/>
+                    <connections>
+                        <outlet property="chartView" destination="vEr-SD-Zqd" id="fGm-je-Kfb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfk-3u-8bU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" catalog="system" width="128" height="87"/>
+        <image name="snow" catalog="system" width="121" height="128"/>
+        <image name="sun.min" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
