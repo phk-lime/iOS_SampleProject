@@ -13,9 +13,11 @@
 		4D882093266A084300F08CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D882092266A084300F08CFB /* Assets.xcassets */; };
 		4D882096266A084300F08CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D882094266A084300F08CFB /* LaunchScreen.storyboard */; };
 		4D88209E266A096300F08CFB /* DynamicHeightLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88209D266A096300F08CFB /* DynamicHeightLayout.swift */; };
+		FC6241FF92DEC467CA634D9A /* Pods_CollectionViewDynamicHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A860D3DF9F931B2289BDC746 /* Pods_CollectionViewDynamicHeight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		279E096A627D08E3F7CD94D4 /* Pods-CollectionViewDynamicHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDynamicHeight.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewDynamicHeight/Pods-CollectionViewDynamicHeight.debug.xcconfig"; sourceTree = "<group>"; };
 		4D882086266A084000F08CFB /* CollectionViewDynamicHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDynamicHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D882089266A084000F08CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D88208D266A084000F08CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4D882095266A084300F08CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D882097266A084300F08CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D88209D266A096300F08CFB /* DynamicHeightLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightLayout.swift; sourceTree = "<group>"; };
+		6A454509BFCD7A0E617A3374 /* Pods-CollectionViewDynamicHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDynamicHeight.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewDynamicHeight/Pods-CollectionViewDynamicHeight.release.xcconfig"; sourceTree = "<group>"; };
+		A860D3DF9F931B2289BDC746 /* Pods_CollectionViewDynamicHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDynamicHeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6241FF92DEC467CA634D9A /* Pods_CollectionViewDynamicHeight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4D882088266A084000F08CFB /* CollectionViewDynamicHeight */,
 				4D882087266A084000F08CFB /* Products */,
+				A6040CB69BF89BC38CED58D7 /* Pods */,
+				518CDB696D8B9CE982300208 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = CollectionViewDynamicHeight;
 			sourceTree = "<group>";
 		};
+		518CDB696D8B9CE982300208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A860D3DF9F931B2289BDC746 /* Pods_CollectionViewDynamicHeight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6040CB69BF89BC38CED58D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				279E096A627D08E3F7CD94D4 /* Pods-CollectionViewDynamicHeight.debug.xcconfig */,
+				6A454509BFCD7A0E617A3374 /* Pods-CollectionViewDynamicHeight.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D88209A266A084300F08CFB /* Build configuration list for PBXNativeTarget "CollectionViewDynamicHeight" */;
 			buildPhases = (
+				44B3E1038EF0BAEC2B30C504 /* [CP] Check Pods Manifest.lock */,
 				4D882082266A084000F08CFB /* Sources */,
 				4D882083266A084000F08CFB /* Frameworks */,
 				4D882084266A084000F08CFB /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44B3E1038EF0BAEC2B30C504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollectionViewDynamicHeight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D882082266A084000F08CFB /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		4D88209B266A084300F08CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279E096A627D08E3F7CD94D4 /* Pods-CollectionViewDynamicHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +353,7 @@
 		};
 		4D88209C266A084300F08CFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A454509BFCD7A0E617A3374 /* Pods-CollectionViewDynamicHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

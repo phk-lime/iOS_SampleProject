@@ -21,51 +21,34 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e2v-HO-mnV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8wX-he-DUR">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8wX-he-DUR">
+                                    <size key="itemSize" width="128" height="181"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="hbo-yB-0X7" customClass="MyCell" customModule="CollectionViewDynamicHeight" customModuleProvider="target">
-                                        <rect key="frame" x="92.5" y="0.0" width="229" height="80.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="181"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fMN-Xs-XVg">
-                                            <rect key="frame" x="0.0" y="0.0" width="229" height="80.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="181"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QcV-Wg-r9I">
-                                                    <rect key="frame" x="0.0" y="0.0" width="229" height="80.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="haanwave0515" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-3M-6Ss">
-                                                            <rect key="frame" x="0.0" y="0.0" width="229" height="21.5"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#17 haanwave0515에 의해 열렸음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-Xl-dH3">
-                                                            <rect key="frame" x="0.0" y="31.5" width="229" height="19.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQC-AK-vuy">
-                                                            <rect key="frame" x="0.0" y="61" width="229" height="19.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="k4y-Yb-eK0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="126"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QcV-Wg-r9I" firstAttribute="top" secondItem="fMN-Xs-XVg" secondAttribute="top" id="3Wf-oY-vA1"/>
-                                                <constraint firstItem="QcV-Wg-r9I" firstAttribute="leading" secondItem="fMN-Xs-XVg" secondAttribute="leading" id="Mk0-ua-Y3H"/>
-                                                <constraint firstAttribute="trailing" secondItem="QcV-Wg-r9I" secondAttribute="trailing" id="gvt-R2-N3E"/>
-                                                <constraint firstAttribute="bottom" secondItem="QcV-Wg-r9I" secondAttribute="bottom" id="jkp-0b-KRw"/>
+                                                <constraint firstItem="k4y-Yb-eK0" firstAttribute="top" secondItem="fMN-Xs-XVg" secondAttribute="top" id="RLR-Sc-Ilv"/>
+                                                <constraint firstAttribute="trailing" secondItem="k4y-Yb-eK0" secondAttribute="trailing" id="avA-yS-8fi"/>
+                                                <constraint firstItem="k4y-Yb-eK0" firstAttribute="leading" secondItem="fMN-Xs-XVg" secondAttribute="leading" id="bcZ-I9-zi8"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="128" height="181"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="k4y-Yb-eK0" id="6mP-Ue-ru2"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -85,10 +68,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="70"/>
+            <point key="canvasLocation" x="169.56521739130437" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="200" height="126"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
