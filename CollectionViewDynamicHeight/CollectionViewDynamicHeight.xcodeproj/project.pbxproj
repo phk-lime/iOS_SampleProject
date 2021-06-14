@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29B045C9D958440CD626BA2E /* Pods_CollectionViewDynamicHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACEF269D840BB12EBE58479 /* Pods_CollectionViewDynamicHeight.framework */; };
 		4D88208A266A084000F08CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D882089266A084000F08CFB /* AppDelegate.swift */; };
 		4D88208E266A084000F08CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88208D266A084000F08CFB /* ViewController.swift */; };
 		4D882091266A084000F08CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D88208F266A084000F08CFB /* Main.storyboard */; };
 		4D882093266A084300F08CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D882092266A084300F08CFB /* Assets.xcassets */; };
 		4D882096266A084300F08CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D882094266A084300F08CFB /* LaunchScreen.storyboard */; };
 		4D88209E266A096300F08CFB /* DynamicHeightLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88209D266A096300F08CFB /* DynamicHeightLayout.swift */; };
-		FC6241FF92DEC467CA634D9A /* Pods_CollectionViewDynamicHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A860D3DF9F931B2289BDC746 /* Pods_CollectionViewDynamicHeight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		279E096A627D08E3F7CD94D4 /* Pods-CollectionViewDynamicHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDynamicHeight.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewDynamicHeight/Pods-CollectionViewDynamicHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		171C72EE1D1FAD83E84023B8 /* Pods-CollectionViewDynamicHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDynamicHeight.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewDynamicHeight/Pods-CollectionViewDynamicHeight.release.xcconfig"; sourceTree = "<group>"; };
+		1D2A58834C72CE7B408953DD /* Pods-CollectionViewDynamicHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDynamicHeight.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewDynamicHeight/Pods-CollectionViewDynamicHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		2ACEF269D840BB12EBE58479 /* Pods_CollectionViewDynamicHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDynamicHeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D882086266A084000F08CFB /* CollectionViewDynamicHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDynamicHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D882089266A084000F08CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D88208D266A084000F08CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		4D882095266A084300F08CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D882097266A084300F08CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D88209D266A096300F08CFB /* DynamicHeightLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightLayout.swift; sourceTree = "<group>"; };
-		6A454509BFCD7A0E617A3374 /* Pods-CollectionViewDynamicHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDynamicHeight.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewDynamicHeight/Pods-CollectionViewDynamicHeight.release.xcconfig"; sourceTree = "<group>"; };
-		A860D3DF9F931B2289BDC746 /* Pods_CollectionViewDynamicHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDynamicHeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC6241FF92DEC467CA634D9A /* Pods_CollectionViewDynamicHeight.framework in Frameworks */,
+				29B045C9D958440CD626BA2E /* Pods_CollectionViewDynamicHeight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +47,8 @@
 			children = (
 				4D882088266A084000F08CFB /* CollectionViewDynamicHeight */,
 				4D882087266A084000F08CFB /* Products */,
-				A6040CB69BF89BC38CED58D7 /* Pods */,
 				518CDB696D8B9CE982300208 /* Frameworks */,
+				CB4E59133467ECF188FBDAB5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,16 +77,16 @@
 		518CDB696D8B9CE982300208 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A860D3DF9F931B2289BDC746 /* Pods_CollectionViewDynamicHeight.framework */,
+				2ACEF269D840BB12EBE58479 /* Pods_CollectionViewDynamicHeight.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A6040CB69BF89BC38CED58D7 /* Pods */ = {
+		CB4E59133467ECF188FBDAB5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				279E096A627D08E3F7CD94D4 /* Pods-CollectionViewDynamicHeight.debug.xcconfig */,
-				6A454509BFCD7A0E617A3374 /* Pods-CollectionViewDynamicHeight.release.xcconfig */,
+				1D2A58834C72CE7B408953DD /* Pods-CollectionViewDynamicHeight.debug.xcconfig */,
+				171C72EE1D1FAD83E84023B8 /* Pods-CollectionViewDynamicHeight.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -334,7 +334,7 @@
 		};
 		4D88209B266A084300F08CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279E096A627D08E3F7CD94D4 /* Pods-CollectionViewDynamicHeight.debug.xcconfig */;
+			baseConfigurationReference = 1D2A58834C72CE7B408953DD /* Pods-CollectionViewDynamicHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,7 +353,7 @@
 		};
 		4D88209C266A084300F08CFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A454509BFCD7A0E617A3374 /* Pods-CollectionViewDynamicHeight.release.xcconfig */;
+			baseConfigurationReference = 171C72EE1D1FAD83E84023B8 /* Pods-CollectionViewDynamicHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
