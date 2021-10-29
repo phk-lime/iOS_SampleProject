@@ -10,13 +10,17 @@
 		18F76E37B7A05F7BA6F62F55 /* Pods_Example_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68E77FC23753E575C25C370 /* Pods_Example_RxSwift.framework */; };
 		4DC368C02729499400F65C95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC368BF2729499400F65C95 /* AppDelegate.swift */; };
 		4DC368C22729499400F65C95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC368C12729499400F65C95 /* SceneDelegate.swift */; };
-		4DC368C42729499400F65C95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC368C32729499400F65C95 /* ViewController.swift */; };
+		4DC368C42729499400F65C95 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC368C32729499400F65C95 /* SampleViewController.swift */; };
 		4DC368C72729499400F65C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC368C52729499400F65C95 /* Main.storyboard */; };
 		4DC368C92729499700F65C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC368C82729499700F65C95 /* Assets.xcassets */; };
 		4DC368CC2729499700F65C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC368CA2729499700F65C95 /* LaunchScreen.storyboard */; };
 		4DE5F0EE272A68A100186D02 /* Zootopia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F0ED272A68A100186D02 /* Zootopia.swift */; };
 		4DE5F0F1272A7BC800186D02 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F0F0272A7BC800186D02 /* NumbersViewController.swift */; };
 		4DE5F0F3272A7F4F00186D02 /* ValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F0F2272A7F4F00186D02 /* ValidateViewController.swift */; };
+		4DE5F0F5272B9EE400186D02 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F0F4272B9EE400186D02 /* RepeatViewController.swift */; };
+		4DE5F0FE272BBC6E00186D02 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F0FD272BBC6E00186D02 /* SimpleTableViewController.swift */; };
+		4DE5F101272BC40D00186D02 /* WireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F100272BC40D00186D02 /* WireFrame.swift */; };
+		4DE5F103272BC83F00186D02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5F102272BC83F00186D02 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +28,7 @@
 		4DC368BC2729499400F65C95 /* Example-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC368BF2729499400F65C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DC368C12729499400F65C95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DC368C32729499400F65C95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DC368C32729499400F65C95 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		4DC368C62729499400F65C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DC368C82729499700F65C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC368CB2729499700F65C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +36,10 @@
 		4DE5F0ED272A68A100186D02 /* Zootopia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zootopia.swift; sourceTree = "<group>"; };
 		4DE5F0F0272A7BC800186D02 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		4DE5F0F2272A7F4F00186D02 /* ValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateViewController.swift; sourceTree = "<group>"; };
+		4DE5F0F4272B9EE400186D02 /* RepeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		4DE5F0FD272BBC6E00186D02 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		4DE5F100272BC40D00186D02 /* WireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireFrame.swift; sourceTree = "<group>"; };
+		4DE5F102272BC83F00186D02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C15B1B7384F70C4CCE10D201 /* Pods-Example-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Example-RxSwift/Pods-Example-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D68E77FC23753E575C25C370 /* Pods_Example_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,18 +85,30 @@
 		4DC368BE2729499400F65C95 /* Example-RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4DE5F0FF272BC40100186D02 /* Service */,
 				4DC368BF2729499400F65C95 /* AppDelegate.swift */,
 				4DC368C12729499400F65C95 /* SceneDelegate.swift */,
 				4DE5F0ED272A68A100186D02 /* Zootopia.swift */,
-				4DC368C32729499400F65C95 /* ViewController.swift */,
+				4DE5F102272BC83F00186D02 /* ViewController.swift */,
+				4DC368C32729499400F65C95 /* SampleViewController.swift */,
 				4DE5F0F0272A7BC800186D02 /* NumbersViewController.swift */,
 				4DE5F0F2272A7F4F00186D02 /* ValidateViewController.swift */,
+				4DE5F0F4272B9EE400186D02 /* RepeatViewController.swift */,
+				4DE5F0FD272BBC6E00186D02 /* SimpleTableViewController.swift */,
 				4DC368C52729499400F65C95 /* Main.storyboard */,
 				4DC368C82729499700F65C95 /* Assets.xcassets */,
 				4DC368CA2729499700F65C95 /* LaunchScreen.storyboard */,
 				4DC368CD2729499700F65C95 /* Info.plist */,
 			);
 			path = "Example-RxSwift";
+			sourceTree = "<group>";
+		};
+		4DE5F0FF272BC40100186D02 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4DE5F100272BC40D00186D02 /* WireFrame.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BC71588AC41A2A1298D0E70E /* Pods */ = {
@@ -215,11 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC368C42729499400F65C95 /* ViewController.swift in Sources */,
+				4DE5F103272BC83F00186D02 /* ViewController.swift in Sources */,
+				4DE5F0F5272B9EE400186D02 /* RepeatViewController.swift in Sources */,
+				4DC368C42729499400F65C95 /* SampleViewController.swift in Sources */,
 				4DC368C02729499400F65C95 /* AppDelegate.swift in Sources */,
+				4DE5F0FE272BBC6E00186D02 /* SimpleTableViewController.swift in Sources */,
 				4DE5F0EE272A68A100186D02 /* Zootopia.swift in Sources */,
 				4DC368C22729499400F65C95 /* SceneDelegate.swift in Sources */,
 				4DE5F0F3272A7F4F00186D02 /* ValidateViewController.swift in Sources */,
+				4DE5F101272BC40D00186D02 /* WireFrame.swift in Sources */,
 				4DE5F0F1272A7BC800186D02 /* NumbersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

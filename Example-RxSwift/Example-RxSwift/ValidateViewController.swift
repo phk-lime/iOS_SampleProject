@@ -50,18 +50,9 @@ class ValidateViewController: UIViewController {
             .bind(to: joinButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
-//        joinButton.rx.tap
-//            .subscribe { [weak self] _ in
-//                self?.showJoinedAlert()
-//            }
-//            .disposed(by: disposeBag)
-        
-        let TEST = Observable.of(100)
         joinButton.rx.tap
-            .flatMap { TEST }
-            .map { $0 > 10 }
-            .subscribe {
-                print("--->", $0)
+            .subscribe { [weak self] _ in
+                self?.showJoinedAlert()
             }
             .disposed(by: disposeBag)
     }
