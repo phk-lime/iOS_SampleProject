@@ -51,11 +51,40 @@ class ViewController: UIViewController {
     }
     
     @IBAction func transferBlackAndWhite(_ sender: UIButton) {
-        if let blackAndWhite = self.imageView.image?.blackAndWhite {
-            self.imageView.image = UIImage(cgImage: blackAndWhite)
-            let test = getBinary(from: blackAndWhite)
-            print("transferBlackAndWhite:::", test)
-        }
+//        if let blackAndWhite = self.imageView.image?.blackAndWhite {
+//            self.imageView.image = UIImage(cgImage: blackAndWhite)
+//            let test = getBinary(from: blackAndWhite)
+//            print("transferBlackAndWhite:::", test)
+//        }
+        
+//        guard let ciImage = CIImage(image: imageView.image!) else { return }
+//        guard let grayImage = CIFilter(name: "CIPhotoEffectNoir",
+//                                       parameters: [kCIInputImageKey: ciImage])?.outputImage else { return }
+//        guard let cgImage = CIContext(options: nil).createCGImage(grayImage,
+//                                                                  from: grayImage.extent) else { return }
+//        imageView.image = UIImage(cgImage: cgImage)
+        
+        /// 1. UIImage -> CIImage로 변환
+        let currentCIImage = CIImage(image: imageView.image!)!
+        /// 2. grayScale 필터 적용
+        guard let grayScaleFilter = CIFilter(name: "CIPhotoEffectNoir") else { return }
+        grayScaleFilter.setValue(currentCIImage, forKey: "inputImage")
+        guard let grayScaleCIImage = grayScaleFilter.outputImage else { return }
+        /// 3. Contrast & Brightness 를 이용한 흑백 이미지 만들기
+        let blackAndWhiteParams: [String: Any] = [
+            kCIInputImageKey: grayScaleCIImage,
+            kCIInputContrastKey: 50.0,
+            kCIInputBrightnessKey: 0.0
+        ]
+        guard let blackAndWhiteFilter = CIFilter(name: "CIColorControls",
+                                                 parameters: blackAndWhiteParams) else { return }
+        guard let blackAndWhiteCIImage = blackAndWhiteFilter.outputImage else { return }
+        /// 4. 흑백 CIImage를 CGImage로 변환
+        let context = CIContext()
+        guard let cgImage = context.createCGImage(blackAndWhiteCIImage,
+                                                  from: blackAndWhiteCIImage.extent) else { return }
+        /// 5. UIImage로 return
+        imageView.image = UIImage(cgImage: cgImage)
     }
     
     private func getBinary(from cgImage: CGImage) -> String {
