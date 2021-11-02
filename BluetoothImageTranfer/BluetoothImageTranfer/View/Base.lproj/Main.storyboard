@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,75 +17,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y3N-Bu-MtP">
-                                <rect key="frame" x="82" y="44" width="250" height="122"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y3N-Bu-MtP">
+                                <rect key="frame" x="82" y="44" width="250" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="cb3-3W-7EN"/>
-                                    <constraint firstAttribute="height" constant="122" id="sie-7s-KCw"/>
+                                    <constraint firstAttribute="height" constant="128" id="sie-7s-KCw"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Hl-72-ixP">
-                                <rect key="frame" x="20" y="186" width="374" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Hl-72-ixP">
+                                <rect key="frame" x="20" y="192" width="374" height="285"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdo-kO-dns">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="이미지 선택">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="imageSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbL-eq-Yuq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-5h-TfA">
-                                        <rect key="frame" x="129.5" y="0.0" width="115" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="사이즈 변환">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="imageSizeConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLv-s0-NbL"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atC-Gu-QWm">
-                                        <rect key="frame" x="259.5" y="0.0" width="114.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="f92-8B-kVQ"/>
+                                        </constraints>
+                                        <state key="normal" title="회색 값 추가">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="imageColorChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuo-dE-AuS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qow-I4-lfA">
+                                        <rect key="frame" x="0.0" y="75" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="KJM-RC-frT"/>
+                                        </constraints>
                                         <state key="normal" title="흑백 변환">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="imageColorChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSI-FA-LFI"/>
+                                            <action selector="transferBlackAndWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1V-Iz-rFh"/>
                                         </connections>
                                     </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gqT-9w-Tsp">
-                                <rect key="frame" x="20" y="231" width="374" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQD-3d-YTb">
-                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1G-6w-XL7">
+                                        <rect key="frame" x="0.0" y="150" width="374" height="60"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="hexaString 변환">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="FOE-yl-MNT"/>
+                                        </constraints>
+                                        <state key="normal" title="setup sample">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="hexStringConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEM-fN-7QG"/>
+                                            <action selector="setupSample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5n-qY-sVY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-bV-bHo">
-                                        <rect key="frame" x="194.5" y="0.0" width="179.5" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbq-aB-GUk">
+                                        <rect key="frame" x="0.0" y="225" width="374" height="60"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="이미지 전송">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qrT-5a-qoJ"/>
+                                        </constraints>
+                                        <state key="normal" title="setup sample2">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="imageTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4B-JA-ZrT"/>
+                                            <action selector="setupSample2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4s-dI-gR3"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연결된 주변장치 없음" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0w-a8-CJE">
-                                <rect key="frame" x="0.0" y="291" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="507" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.60784313725490191" green="0.6064300537109375" blue="0.6064300537109375" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ibP-ZM-2Yz"/>
@@ -95,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qkA-xw-CWW">
-                                <rect key="frame" x="0.0" y="371" width="414" height="491"/>
+                                <rect key="frame" x="0.0" y="587" width="414" height="275"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -105,21 +102,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="t0w-a8-CJE" firstAttribute="top" secondItem="gqT-9w-Tsp" secondAttribute="bottom" constant="30" id="0hD-VU-hNN"/>
                             <constraint firstItem="qkA-xw-CWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4gF-d5-0Cy"/>
                             <constraint firstItem="t0w-a8-CJE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GDM-8w-hC5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkA-xw-CWW" secondAttribute="trailing" id="K0s-8M-wDx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qkA-xw-CWW" secondAttribute="bottom" id="Lqu-UY-hfW"/>
-                            <constraint firstItem="gqT-9w-Tsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MLG-OF-Mmb"/>
                             <constraint firstItem="qkA-xw-CWW" firstAttribute="top" secondItem="t0w-a8-CJE" secondAttribute="bottom" constant="30" id="P5b-dd-Q19"/>
                             <constraint firstItem="Y3N-Bu-MtP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gCN-JX-MZf"/>
                             <constraint firstItem="7Hl-72-ixP" firstAttribute="top" secondItem="Y3N-Bu-MtP" secondAttribute="bottom" constant="20" id="gCO-ig-oof"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t0w-a8-CJE" secondAttribute="trailing" id="gFN-SL-IOz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Hl-72-ixP" secondAttribute="trailing" constant="20" id="jvv-yF-0J0"/>
-                            <constraint firstItem="gqT-9w-Tsp" firstAttribute="top" secondItem="7Hl-72-ixP" secondAttribute="bottom" constant="15" id="jxe-l1-jvT"/>
                             <constraint firstItem="7Hl-72-ixP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pWh-a2-Bt8"/>
                             <constraint firstItem="Y3N-Bu-MtP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qh2-pV-rIr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gqT-9w-Tsp" secondAttribute="trailing" constant="20" id="z7i-eC-ZB5"/>
+                            <constraint firstItem="t0w-a8-CJE" firstAttribute="top" secondItem="7Hl-72-ixP" secondAttribute="bottom" constant="30" id="rgw-O1-ZCq"/>
                         </constraints>
                     </view>
                     <connections>

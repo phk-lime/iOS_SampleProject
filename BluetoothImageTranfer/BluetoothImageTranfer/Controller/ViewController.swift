@@ -6,118 +6,78 @@
 //
 
 import UIKit
-import CoreBluetooth
-import Mantis
 
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var connectStatusLabel: UILabel!
     
-    var imagePicker = UIImagePickerController()
-    
-    var bluetoothService = CoreBluetoothService.shared
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// image picker
-        imagePicker.delegate = self
-        /// bluetoothService 설정
-        bluetoothService.connectCompletion = { success in
-            self.connectStatusLabel.backgroundColor = .orange
-            self.connectStatusLabel.text = "DoorLock_aBLE - Connect"
-        }
     }
     
-    // MARK: - ACtion
-    @IBAction func imageSelect(_ sender: Any) {
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.modalPresentationStyle = .fullScreen
-        self.present(imagePicker, animated: true)
+    @IBAction func setupSample(_ sender: UIButton) {
+        imageView.image = UIImage(named: "sample3")?.resizeImage
     }
     
-    @IBAction func imageSizeConvert(_ sender: Any) {
-        guard let currentImage = imageView.image else { return }
-        let resizeImage = currentImage.resizeToFitLCDScreen()
-        imageView.image = resizeImage
+    @IBAction func setupSample2(_ sender: UIButton) {
+        imageView.image = UIImage(named: "sample2")?.resizeImage
     }
     
     @IBAction func imageColorChange(_ sender: Any) {
-        guard let currentImage = imageView.image else { return }
-        let grayScaleImage = currentImage.grayScaled
-        imageView.image = grayScaleImage
-    }
-    
-    @IBAction func hexStringConvert(_ sender: Any) {
-        guard let currentImage = imageView.image else { return }
-        let jpegData = currentImage.jpegData(compressionQuality: 0.1)!
-        let hexaString = jpegData.map { String(format: "%02x", $0) }.joined()
-        let hexaData = hexaString.hexaData
-        textView.text = "--->[hexaData: \(hexaData)] \(hexaString)"
-    }
-    
-    // MARK: - 이미지 전송
-    @IBAction func imageTransfer(_ sender: Any) {
-//        /// 현재 이미지 가져오기
-//        guard let currentImage = imageView.image else { return }
-//        /// 250 * 122 로 사이즈 변경
-//        let resizeImage = currentImage.resizeToFitLCDScreen()
-//        /// 흑백 이미지로 변경
-//        let grayScaleImage = resizeImage.grayScaled!
-//        /// jpegData로 변환
-//        let jpegData = grayScaleImage.jpegData(compressionQuality: 0.1)!
-//        /// hexaString
-//        let hexaString = jpegData.map { String(format: "%02x", $0) }.joined()
-//        /// hexaData
-//        let hexaData = hexaString.hexaData
+        /// https://www.hackingwithswift.com/example-code/media/how-to-desaturate-an-image-to-make-it-black-and-white
+        /// How to desaturate an image to make it black and white
+        guard let currentCGImage = imageView.image?.cgImage else { return }
+        let currentCIImage = CIImage(cgImage: currentCGImage)
         
-        /// 999개만 뽑아서 보내보기
-//        let endIndex: String.Index = hexaString.index(hexaString.startIndex, offsetBy: 998)
-//        let testStr = String(hexaString[...endIndex])
-//        command += testStr
+        let filter = CIFilter(name: "CIColorMonochrome")
+        filter?.setValue(currentCIImage, forKey: "inputImage")
         
+        /// 색조 색상에 대한 회색 값 설정
+        filter?.setValue(CIColor(red: 0.8, green: 0.8, blue: 0.8), forKey: "inputColor")
         
-        var testImage = "02FA02A203"
-        var testBarcode = "02FA02A209"
+        filter?.setValue(1.0, forKey: "inputIntensity")
+        guard let outputImage = filter?.outputImage else { return }
         
-        let testData = testBarcode.hexaData
-        print("--->[transfer data] \(testData)")
+        let context = CIContext()
         
-        guard let connectedPeripherals = bluetoothService.connectedPeripherals else { return }
-        connectedPeripherals.writeValue(testData,
-                                        for: TransferService.transferCharacteristic!,
-                                        type: .withoutResponse)
-        
-        print("--->[transfer] success")
-    }
-}
-
-extension ViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let selectedImage = info[.originalImage] as? UIImage else {
-            return
+        if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
+            let processedImage = UIImage(cgImage: cgImage)
+            print(processedImage.size)
+            self.imageView.image = UIImage(cgImage: cgImage)
+            let test = getBinary(from: cgImage)
+            print("imageColorChange:::", test)
         }
-
-        let config = Mantis.Config()
-        let cropViewController = Mantis.cropViewController(image: selectedImage,
-                                                           config: config)
-        cropViewController.config.presetFixedRatioType = .alwaysUsingOnePresetFixedRatio(ratio: 2.0 / 1.0)
-        cropViewController.modalPresentationStyle = .fullScreen
-        cropViewController.delegate = self
-        
-        picker.pushViewController(cropViewController, animated: true)
-    }
-}
-
-extension ViewController: CropViewControllerDelegate {
-    func cropViewControllerDidCrop(_ cropViewController: CropViewController, cropped: UIImage, transformation: Transformation) {
-        
-        imageView.image = cropped
-        
-        cropViewController.dismiss(animated: true)
     }
     
-    func cropViewControllerDidCancel(_ cropViewController: CropViewController, original: UIImage) {
-        cropViewController.navigationController?.popViewController(animated: true)
+    @IBAction func transferBlackAndWhite(_ sender: UIButton) {
+        if let blackAndWhite = self.imageView.image?.blackAndWhite {
+            self.imageView.image = UIImage(cgImage: blackAndWhite)
+            let test = getBinary(from: blackAndWhite)
+            print("transferBlackAndWhite:::", test)
+        }
+    }
+    
+    private func getBinary(from cgImage: CGImage) -> String {
+        var binaryArray = [String]()
+        guard let data = cgImage.dataProvider?.data,
+              let bytes = CFDataGetBytePtr(data) else { return "" }
+        let bytesPerPixel = cgImage.bitsPerPixel / cgImage.bitsPerComponent
+        for x in 0..<cgImage.width {
+            for y in 0..<cgImage.height {
+                let offset = (y * cgImage.bytesPerRow) + (x * bytesPerPixel)
+                if bytes[offset] == 0 {
+                    binaryArray.append("0")
+                    print("getBinary:::", bytes[offset], bytes[offset+1], bytes[offset+2])
+                }
+                else {
+                    binaryArray.append("1")
+                    print("getBinary:::", bytes[offset], bytes[offset+1], bytes[offset+2])
+                }
+            }
+        }
+        print("--->[getBinary] \(binaryArray.count)")
+        let binary = binaryArray.joined()
+        return binary
     }
 }
