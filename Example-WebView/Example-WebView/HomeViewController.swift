@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-let sampleURL = URL(string: "https://www.kisti.re.kr/post/explore?t=1635815205472")!
+let sampleURL = URL(string: "https://apple.com")!
 let requestURL = URLRequest(url: sampleURL)
 
 class HomeViewController: UIViewController {
